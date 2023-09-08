@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="shortcut icon" href="nodejs.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <h3 align="center">Login Form</h3>
+    <form action="home.html" method="post">
+        <table border="1" width="400" align="center" height="120">
+            <tr>
+                <td>Full Name <font color="red">*</font></td>
+                <td><input type="text" required pattern="[a-zA-Z ]+" name="txtName" title="Please enter only alphabets"></td>
+            </tr>
+            <tr>
+                <td>Mobile Number <font color="red">*</font></td>
+                <td><input type="tel" required pattern="[0-9]{10}"  name="txtNumber" title="Please enter valid mobile number"></td>
+            </tr>
+            <tr>
+                <td>Phone Number <font color="red">*</font></td>
+                <td><input type="tel" required pattern="[6789][0-9]{9}"  name="txtNumber" title="Please enter valid mobile number"></td>
+            </tr>
+            <tr>
+                <td>Enter Email <font color="red">*</font></td>
+                <td><input type="email" required name="txtEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+            </tr>
+            <tr>
+                <td>Enter Password <font color="red">*</font></td>
+                <td><input type="password" required name="txtPassword"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btnLogin" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+<!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
+<!-- 
+    1. Pattern for only alphabets with space []
+    2. pattern for only number with 10 digit 
+    3. pattern for only number with 10 digit and number start with 6,7,8,9
+
+
+
+
+-->
